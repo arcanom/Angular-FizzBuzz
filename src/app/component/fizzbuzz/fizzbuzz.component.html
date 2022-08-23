@@ -1,0 +1,7 @@
+<div class="rounded-circle bg-info col-1   p-4">
+  <div class="text-center">
+      <p [ngStyle]="{'color':valeur % 3 === 0 &&  valeur % 5 ===0?'orange': valeur%  3 === 0? 'blue': valeur % 5 === 0?'green' :'black'}" [ngClass]="size"  > {{fizzbuzz}} </p>
+  </div>
+  <button class="btn btn-primary rounded-circle" (click)="diminuer()"> - </button>
+  <button class="btn btn-primary rounded-circle " (click)="augmenter()"> + </button>
+</div>
